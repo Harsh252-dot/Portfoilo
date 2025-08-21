@@ -45,12 +45,12 @@ export const Navbar = () => {
   }, [drawer]);
 
   const handleResume = () => {
-    const resumePath = 'Harsh-Resume (18).pdf';
+    const resumePath = 'Harsh-Maharshi-Resume.pdf';
     window.open(resumePath, '_blank');
     setTimeout(() => {
       const link = document.createElement('a');
       link.href = resumePath;
-      link.setAttribute('download', 'resume.pdf');
+      link.setAttribute('download', 'Harsh-Maharshi-Resume.pdf');
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
